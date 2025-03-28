@@ -1,0 +1,131 @@
+/* #btn{
+padding: 5px;
+}
+button:active{
+    scale: 0.95;
+    background-color: red;   
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg,aqua,blue);    
+    /* color1/color2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+.container{
+    margin: 15px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* task 1 : is to do animation when we load the page than 3 sec it will take to start */
+
+header h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* har word ka first letter capital */
+}
+
+section{
+    margin-bottom : 20px;
+}
+
+#profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    /* this is entire section so we will give the border to image inside it */
+
+
+}
+
+#profile-picture img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 174, 255);
+
+    /* TASK : hover pe bda karna hai and transition lgana hai for slow becoming greater */
+}
+
+
+section h2{
+    font-size: 1.7rem;
+    color: rgb(0, 174, 255);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section p,ul{
+    font-size: 1rem;
+    color: rgb(114,135,135);
+}
+
+/* lets remomve the list dots */
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    padding: 10px;
+    background-color: #f3f4f6;
+    margin-bottom: 10px;
+    /* this is for gray shade margin */
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+ul li:hover{
+    background-color: #e6e8ea;
+    transform: all 2s ease-in-out ;
+}
+
+button{
+    background: linear-gradient(135deg , blue ,aqua);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor : pointer;
+    transition: all 0.5s ease;
+
+    
+}
+
+button:hover{
+    background: linear-gradient(135deg , aqua ,blue);
+    transform: scale(1.05);   
+
+}
+#fun-fact-text{
+    /* display: none; */
+    margin-top: 10px;
+    color: cadetblue;
+    font-style: italic;
+
+
+}
